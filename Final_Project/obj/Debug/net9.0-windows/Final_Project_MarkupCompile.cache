@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP
 E:\Windows_Programming\Final\Final_Project\App.xaml
-11407045341
+81174922706
 
-4684589847
+28371167567
 229-1520253958
-MainWindow.xaml;
+MainWindow.xaml;Views\ActorView.xaml;Views\GenresView.xaml;Views\HomeView.xaml;Views\SearchActorsView.xaml;Views\SearchDirectorsView.xaml;Views\SearchTitlesView.xaml;Views\TitleView.xaml;
 
 False
 

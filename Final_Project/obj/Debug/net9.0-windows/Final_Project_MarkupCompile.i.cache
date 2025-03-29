@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 E:\Windows_Programming\Final\Final_Project\App.xaml
-9-626666397
+81174922706
 
-29-1088889956
+30-37287110
 229-1520253958
-MainWindow.xaml;Views\ActorView.xaml;Views\DirectorView.xaml;Views\GenresView.xaml;Views\HomeView.xaml;Views\MovieView.xaml;Views\SearchActorsView.xaml;Views\SearchDirectorsView.xaml;Views\SearchMoviesView.xaml;
+MainWindow.xaml;Views\ActorView.xaml;Views\GenresView.xaml;Views\HomeView.xaml;Views\SearchActorsView.xaml;Views\SearchDirectorsView.xaml;Views\SearchTitlesView.xaml;Views\TitleView.xaml;
 
-False
+True
 

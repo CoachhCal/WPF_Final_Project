@@ -53,7 +53,7 @@ namespace Final_Project.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Final_Project;V1.0.0.0;component/views/searchmoviesview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Final_Project;component/views/searchmoviesview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\SearchMoviesView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

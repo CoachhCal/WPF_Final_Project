@@ -25,7 +25,7 @@
             <MenuItem Header="View">
                 <MenuItem Header="Home" Command="{Binding NavigateToHomeCommand}"></MenuItem>
                 <MenuItem Header="View Genres" Command="{Binding NavigateToGenresCommand}"></MenuItem>
-                <MenuItem Header="View Movies" Command="{Binding NavigateToSearchMoviesCommand}"></MenuItem>
+                <MenuItem Header="View Movies" Command="{Binding NavigateToSearchTitlesCommand}"></MenuItem>
                 <MenuItem Header="View Actors" Command="{Binding NavigateToSearchActorsCommand}"></MenuItem>
                 <MenuItem Header="View Directors" Command="{Binding NavigateToSearchDirectorsCommand}"></MenuItem>
                 

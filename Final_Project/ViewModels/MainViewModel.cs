@@ -39,7 +39,7 @@ namespace Final_Project.ViewModels
 
         public ICommand NavigateToHomeCommand => new RelayCommand(_ => _navigationService.NavigateTo<HomeViewModel>());
         public ICommand NavigateToGenresCommand => new RelayCommand(_ => _navigationService.NavigateTo<GenresViewModel>());
-        public ICommand NavigateToSearchMoviesCommand => new RelayCommand(_ => _navigationService.NavigateTo<SearchMoviesViewModel>());
+        public ICommand NavigateToSearchTitlesCommand => new RelayCommand(_ => _navigationService.NavigateTo<SearchTitlesViewModel>());
         public ICommand NavigateToSearchActorsCommand => new RelayCommand(_ => _navigationService.NavigateTo<SearchActorsViewModel>());
         public ICommand NavigateToSearchDirectorsCommand => new RelayCommand(_ => _navigationService.NavigateTo<SearchDirectorsViewModel>());
 
@@ -56,4 +56,4 @@ namespace Final_Project.ViewModels
     }
 
 }
-}
+

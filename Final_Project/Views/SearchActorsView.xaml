@@ -4,9 +4,39 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Final_Project.Views"
+             xmlns:vm="clr-namespace:Final_Project.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Titles" FontSize="24"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10,10,10,0">
+            <TextBlock Text="Search by Title Name:   " />
+            <TextBox Width="200" Text="{Binding SearchQueryActor, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+
+        <ListView Grid.Row="2" ItemsSource="{Binding FilteredActors}" Margin="10" SelectedItem="{Binding SelectedActor}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding PrimaryName}" Grid.Column="0" Margin="5"/>
+                        <!--<TextBlock Text="{Binding Title}" Grid.Column="1" Margin="5"/>-->
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </UserControl>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Final_Project.ViewModels;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,7 @@ namespace Final_Project.Views
         public ActorView()
         {
             InitializeComponent();
+            
         }
     }
 }

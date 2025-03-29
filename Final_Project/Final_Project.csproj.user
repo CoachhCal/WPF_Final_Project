@@ -5,25 +5,22 @@
     <Compile Update="Views\ActorView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\DirectorView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="Views\GenresView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\HomeView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\MovieView.xaml.cs">
+    <Compile Update="Views\SearchTitlesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\TitleView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\SearchActorsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\SearchDirectorsView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\SearchMoviesView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
