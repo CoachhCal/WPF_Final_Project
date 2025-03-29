@@ -1,0 +1,55 @@
+﻿<Window x:Class="Final_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Final_Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Menu Grid.Row="0" >
+            <MenuItem Header="File" >
+                <MenuItem Header="Exit" Command="{Binding ExitCommand}"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="View">
+                <MenuItem Header="Home" Command="{Binding NavigateToHomeCommand}"></MenuItem>
+                <MenuItem Header="View Genres" Command="{Binding NavigateToGenresCommand}"></MenuItem>
+                <MenuItem Header="View Movies" Command="{Binding NavigateToSearchMoviesCommand}"></MenuItem>
+                <MenuItem Header="View Actors" Command="{Binding NavigateToSearchActorsCommand}"></MenuItem>
+                <MenuItem Header="View Directors" Command="{Binding NavigateToSearchDirectorsCommand}"></MenuItem>
+                
+            </MenuItem>
+        </Menu>
+
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center">
+            <TextBlock Text="Final Project Title" FontSize="32"
+               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center">
+            <TextBlock Text="Movies" FontSize="20" Margin="0,0,10,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="Actors" FontSize="20" Margin="0,0,10,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="Genre" FontSize="20" Margin="0,0,10,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="Directors" FontSize="20" Margin="0,0,10,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="Writers" FontSize="20" Margin="0,0,10,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+
+
+        <!-- Main Content Section -->
+        <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Background="#e6d8bd" Margin="5,10,10,10">
+            <ContentControl Content="{Binding CurrentViewModel}"/>
+        </Border>
+    </Grid>
+</Window>
